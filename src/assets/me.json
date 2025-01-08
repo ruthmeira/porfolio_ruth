@@ -1,0 +1,18 @@
+{
+    "nombre": "Ruth",
+    "profesion": "Estudiante de GCFS DAW",
+    "bio": "Además de ser estudiante de DAW, ya tengi el título de técnico en sistemas microinformaticos y redes",
+    "experiencia": [
+        {
+            "nombre": "Academia ECOS ",
+            "descripcion": "Trabaje mucho en el montaje, mantenimiento, reparación y administración de equipos. Realice montaje de cables y rosetas Ethernet. También tuve la experiencia en la atención al cliente",
+            "fecha": "3/04/2005 - 11/06/2024"
+        }
+    ],
+    "habilidades": [
+        "HTML",
+        "CSS",
+        "JAVA"
+    ]
+
+}
