@@ -14,9 +14,13 @@ const { default: meData } = await import('../assets/me.json');
 	
 	<section>
 		<h2>Experiencia</h2>
-		<p>{meData.experiencia[0].nombre}</p>
-		<p>{meData.experiencia[0].descripcion}</p>
-		<p>{meData.experiencia[0].fecha}</p>
+		{meData.experiencia.map((exp)=> (
+			<article>
+				<p>{exp.nombre}</p>
+				<p>{exp.descripcion}</p>
+				<p>{exp.fecha}</p>
+			</article>
+		))}
 	</section>
 	
 	<section>
@@ -27,4 +31,4 @@ const { default: meData } = await import('../assets/me.json');
 	</section>
 	
 </Layout>
- 
+  
