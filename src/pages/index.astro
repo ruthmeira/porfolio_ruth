@@ -1,15 +1,32 @@
 ---
 import Layout from '../layouts/Layout.astro';
+interface Project{
+	tittle: string
+	description: string
+}
 
 const { default: meData } = await import('../assets/me.json');
+const projects = await Astro.glob<Project>('../pages/projects/*.md')
+console.log(projects)
 
 ---
 
 <Layout>
+	<section class="principal">
+		<h1 class="nombre">{meData.nombre}</h1>
+		<p class="profesion">{meData.profesion}</p>
+		<p class="bio">{meData.bio}</p>
+	</section>
 	<section>
-		<h1>{meData.nombre}</h1>
-		<p>{meData.profesion}</p>
-		<p>{meData.bio}</p>
+			<h2>Proyectos</h2>
+			{projects.map((project) => (
+				<a href={project.url}>
+				<article class="proyecto"> 
+				<h3>{project.frontmatter.tittle}</h3>
+				<p>{project.frontmatter.description}</p>
+				</article>
+				</a>
+			))}
 	</section>
 	
 	<section>
@@ -25,9 +42,13 @@ const { default: meData } = await import('../assets/me.json');
 	
 	<section>
 		<h2>Habilidades</h2>
-		{meData.habilidades.map((habilidad)=> (
-			<p>{habilidad}</p>
-		))}
+		<div class="envoltura-habilidad">
+			{meData.habilidades.map((habilidad)=> (
+				<article>
+					<p>{habilidad}</p>
+				</article>
+			))}
+		</div> 
 	</section>
 	
 </Layout>
