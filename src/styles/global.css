@@ -1,9 +1,53 @@
 section {
-    max-width: 200px;
+    max-width: 900px;
     margin-right: auto;
     margin-left: auto;
 }
 
 html {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.principal {
+    background-color: hsl(177, 100%, 77%);
+    border: 3px solid black;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.nombre {
+    font-size: 90px;
+    text-align: center;
+    line-height: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.profesion {
+    font-size: 25px;
+    line-height: 0%;
+}
+
+.bio {
+    font-size: 25px;
+    line-height: 100%;
+}
+
+.experencia {
+    padding: 16px;
+    border: 1px solid;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.habilidades {
+    width: fit-content;
+    padding: 8px;
+    background-color: aqua;
+}
+
+.envoltura-habilidad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
