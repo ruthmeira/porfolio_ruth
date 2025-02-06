@@ -1,53 +1,70 @@
-section {
-    max-width: 900px;
-    margin-right: auto;
-    margin-left: auto;
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
-
-html {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+header {
+    background: #0077b6;
+    padding: 10px 0;
 }
-
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
 .principal {
-    background-color: hsl(177, 100%, 77%);
-    border: 3px solid black;
-    border-radius: 16px;
-    margin-bottom: 16px;
-    padding: 16px;
-}
-
-.nombre {
-    font-size: 90px;
     text-align: center;
-    line-height: 0%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(135deg, #00aaff, #00ffaa);
+    color: white;
+    padding: 40px;
 }
-
-.profesion {
-    font-size: 25px;
-    line-height: 0%;
+.proyecto-link {
+    text-decoration: none;
+    color: black;
 }
-
-.bio {
-    font-size: 25px;
-    line-height: 100%;
+.proyecto {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-.experencia {
-    padding: 16px;
-    border: 1px solid;
-    border-radius: 16px;
-    margin-bottom: 16px;
+.experiencia {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-.habilidades {
-    width: fit-content;
-    padding: 8px;
-    background-color: aqua;
-}
-
 .envoltura-habilidad {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
+}
+.habilidad {
+    background: #00aaff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+footer {
+    background: #0077b6;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.redes-sociales .icono {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
 }
